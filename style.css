@@ -24,12 +24,12 @@
         }
         
         li a:hover:not(.active) {
-            background-color: rgb(50, 195, 225);
+            background-color: teal;
         }
         
         li a.active {
             color: white;
-            background-color: rgb(50, 195, 225);
+            background-color: teal;
             float: right;
         }
         
@@ -73,7 +73,7 @@
         /* styling the projects cards*/
         
         .the-card:hover {
-            box-shadow: 0 8px 16px 0 green;
+            box-shadow: 0 8px 16px 0 teal;
         }
         
         .the-container {
@@ -91,12 +91,40 @@
             box-shadow: 0 4px 8px 0 grey;
         }
         
-        .my-card {
+        button {
+            background-color: teal;
+            float: right;
+            margin: 15px;
+            border-radius: 12px;
+        }
+        
+        .my-card- {
             /* Add shadows to create the "card" effect */
-            box-shadow: 10 14px 18px 10 grey;
+            box-shadow: 0 4px 8px 0 grey;
         }
         /* Add some padding inside the card container */
         
         .my-container {
             padding: 2px 16px;
+        }
+        
+        .foot {
+            width: 200%;
+            margin-top: 20px;
+            margin-left: -70px;
+        }
+        
+        em {
+            color: seagreen;
+        }
+        
+        p.foot {
+            text-align: left;
+            font-style: italic;
+            margin-right: 200px;
+        }
+        
+        i.foot {
+            text-align: left;
+            margin-left: 600px;
         }
