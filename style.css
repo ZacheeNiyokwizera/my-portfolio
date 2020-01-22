@@ -1,5 +1,3 @@
-        /* Change the link color to #111 (black) on hover */
-        
         ul {
             list-style-type: none;
             margin: 0px;
@@ -75,11 +73,11 @@
         .the-card:hover {
             box-shadow: 0 8px 16px 0 teal;
         }
-        
+       
         .the-container {
             padding: 15px 36px;
-        }
-        
+        } 
+       
         .the-card {
             float: right;
             width: 20%;
@@ -89,6 +87,8 @@
             margin-right: 30px;
             margin-bottom: 100px;
             box-shadow: 0 4px 8px 0 grey;
+            color: grey;
+            font-size: 10px;
         }
         
         button {
@@ -109,22 +109,72 @@
         }
         
         .foot {
-            width: 200%;
-            margin-top: 20px;
-            margin-left: -70px;
+            width: 300%;
+            margin-top: 70px;
+            margin-left: -63px;
+            margin-bottom: -90px;
         }
         
         em {
-            color: seagreen;
+            color:white;
+            margin-left: 20px;
+            margin-bottom: 40px;
         }
         
-        p.foot {
-            text-align: left;
-            font-style: italic;
-            margin-right: 200px;
+        .copy {
+            margin-top: 30px;
+        }
+
+        i {
+            margin-right: 20px;
+          
+        }
+        .foo {
+            margin-bottom: 90px;
+            margin-left: 1200px;
+            margin-top: -10px;
+        }
+        /*making the footer responsive*/
+        @media screen and (min-width: 850px) {
+            .copy {
+                 margin-left: 60px;
+                font-size: 1px;
+                
+           
+            }
+        }
+        @media screen and (min-width: 900px) {
+            .foo {
+                display: flex;
+                font-size: 1px;
+                align-content: center;
+                margin-left: 500px;
+            }
+        } 
+
+        /*social media icons in a small fone */
+        @media screen and (min-width: 300px) {
+            .foo {
+                display: flex;
+                font-size: 1px;
+                align-content: center;
+                margin-left: 160px;
+                margin-top: -100px;
+            }
+            em {
+              display: none;  
+            }
+        } 
+        /*copywrite words in a small fone */
+        @media screen and (min-width: 300px) {
+            .copy {
+                display: flex;
+                font-size: 1px;
+                align-content: center;
+                margin-left: 160px;
+                padding-top: 120px;
+            }
         }
         
-        i.foot {
-            text-align: left;
-            margin-left: 600px;
-        }
+        
+        
