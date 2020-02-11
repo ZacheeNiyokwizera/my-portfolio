@@ -1,187 +1,104 @@
-        ul {
-            list-style-type: none;
-            margin: 0px;
-            padding: 0px;
-            overflow: hidden;
-            position: fixed;
-            width: 100%;
-            border: 1px solid #e7e7e7;
-            background-color: #F0F8FF;
-        }
-        
-        li {
-            float: right;
-        }
-        
-        li a {
-            display: block;
-            color: #666;
-            text-align: center;
-            padding: 14px 30px;
-            text-decoration: none;
-        }
-        
-        li a:hover:not(.active) {
-            background-color: teal;
-        }
-        
-        li a.active {
-            color: white;
-            background-color: teal;
-            float: right;
-        }
-        
-        #home {
-            margin: 0px;
-        }
-        
-        h1.my-projects {
-            text-align: center;
-            text-decoration: underline;
-            margin-bottom: 20px;
-            color: gray;
-            font-style: italic;
-        }
-        
-         #title {
-           color:red;
-           margin-bottom: 2000px;
-        }
-        h1 {
-            text-align: center;
-            text-decoration: underline;
-            margin-bottom: 20px;
-            color: gray;
-            font-style: italic;
-        }
-        
-        .content:hover {
-            box-shadow: 0 8px 16px 0 green;
-        }
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        
-    @media screen and (max-width: 900px) {
-            .my-projects {
-                width: 50%;
-            }
-          .coming-soon {
+body {
+  width: 100%;
+  margin-right: 0px;
+}
+
+h1.my-projects {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  color: gray;
+  font-style: italic;
+}
+
+#title {
+  color: red;
+  margin-bottom: 2000px;
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  color: gray;
+  font-style: italic;
+}
+
+.content:hover {
+  box-shadow: 0 8px 16px 0 green;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 900px) {
+  .my-projects {
+    width: 50%;
+  }
+  .coming-soon {
     margin-top: -500px;
-         }  
-        }
-        /* styling the projects cards*/
-        
-        .the-card:hover {
-            box-shadow: 0 8px 16px 0 teal;
-        }
-       
-        .the-container {
-            padding: 15px 36px;
-        } 
-       
-        .the-card {
-            float: right;
-            width: 20%;
-            padding: 0px;
-            margin-top: 60px;
-            margin-left: 40px;
-            margin-right: 30px;
-            margin-bottom: 100px;
-            box-shadow: 0 4px 8px 0 grey;
-            color: grey;
-            font-size: 10px;
-        }
-        
-        button {
-            background-color: teal;
-            float: right;
-            margin: 15px;
-            border-radius: 12px;
-        }
-        
-        .my-card- {
-            /* Add shadows to create the "card" effect */
-            box-shadow: 0 4px 8px 0 grey;
-        }
-        /* Add some padding inside the card container */
-        
-        .my-container {
-            padding: 2px 16px;
-        }
-        
-        .foot {
-            width: 300%;
-            margin-top: 70px;
-            margin-left: -63px;
-            margin-bottom: -90px;
-        }
-        
-        em {
-            color:white;
-            margin-left: 20px;
-            margin-bottom: 40px;
-        }
-        
-        .copy {
-            margin-top: 30px;
-        }
+  }
+}
+/* styling the projects cards*/
 
-        i {
-            margin-right: 20px;
-          
-        }
-        .foo {
-            margin-bottom: 90px;
-            margin-left: 1200px;
-            margin-top: -10px;
-        }
-        /*making the footer responsive*/
-        @media screen and (min-width: 850px) {
-            .copy {
-                 margin-left: 60px;
-                font-size: 1px;
-                
-           
-            }
-        }
-        @media screen and (min-width: 900px) {
-            .foo {
-                display: flex;
-                font-size: 1px;
-                align-content: center;
-                margin-left: 500px;
-            }
-        } 
+.the-card:hover {
+  box-shadow: 0 8px 16px 0 teal;
+}
 
-        /*social media icons in a small fone */
-        @media screen and (min-width: 300px) {
-            .foo {
-                display: flex;
-                font-size: 1px;
-                align-content: center;
-                margin-left: 160px;
-                margin-top: -100px;
-            }
-            em {
-              display: none;  
-            }
-        } 
-        /*copywrite words in a small fone */
-        @media screen and (min-width: 300px) {
-            .copy {
-                display: flex;
-                font-size: 1px;
-                align-content: center;
-                margin-left: 160px;
-                padding-top: 120px;
-            }
-        } 
-        .coming-soon {
-    margin-top: -500px;
-    float: inherit;
-         } 
+.the-container {
+  padding: 15px 36px;
+}
 
+.the-card {
+  float: right;
+  width: 20%;
+  padding: 0px;
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 30px;
+  margin-bottom: 100px;
+  box-shadow: 0 4px 8px 0 grey;
+  color: grey;
+  font-size: 10px;
+}
 
-  
-        
-        
-        
+button {
+  background-color: teal;
+  float: right;
+  margin: 15px;
+  border-radius: 12px;
+}
+
+.my-card- {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 grey;
+}
+/* Add some padding inside the card container */
+
+.my-container {
+  padding: 2px 16px;
+}
+
+.foot {
+  width: 300%;
+  margin-top: 70px;
+  margin-left: -63px;
+  margin-bottom: -90px;
+}
+
+em {
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.copy {
+  margin-top: 30px;
+}
+
+  em {
+    display: none;
+  }
+}
+
+.coming-soon {
+  margin-top: -500px;
+  float: inherit;
+}
