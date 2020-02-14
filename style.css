@@ -56,8 +56,8 @@ body {
 
 button {
   text-decoration: none;
-  color: #22cc33;
-  border: 2px solid #22cc33;
+  color: #a9a9a9;
+  border: 2px solid yellow;
   display: inline-block;
   padding: 10px 0;
   margin: 28px 0;
@@ -77,8 +77,8 @@ button {
   transform: rotate(45deg);
   padding: 10px 40px;
   position: absolute;
-  top: 16px;
-  right: -34px;
+  top: 24px;
+  right: -45px;
 }
 
 @media screen and (max-width: 980px) {
@@ -119,4 +119,26 @@ footer {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 grey;
   padding: 2px 16px;
+}
+.improve {
+  margin-left: -18px;
+  background-size: cover;
+  border-radius: 10px;
+  margin-top: -6px;
+}
+
+.zero {
+  margin-left: 20px;
+}
+.one {
+  margin-left: 75px;
+  margin-top: -25px;
+}
+.two {
+  margin-left: 140px;
+  margin-top: -25px;
+}
+.three {
+  margin-left: 180px;
+  margin-top: -25px;
 }
