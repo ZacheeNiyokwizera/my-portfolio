@@ -125,20 +125,50 @@ footer {
   background-size: cover;
   border-radius: 10px;
   margin-top: -6px;
+  height: 450px;
+}
+
+.yellow {
+  margin-top: -20px;
 }
 
 .zero {
-  margin-left: 20px;
+  margin-left: 15px;
+  margin-top: 30px;
 }
 .one {
   margin-left: 75px;
   margin-top: -25px;
 }
 .two {
-  margin-left: 140px;
-  margin-top: -25px;
+  margin-left: 150px;
+  margin-top: -23px;
 }
 .three {
-  margin-left: 180px;
+  margin-left: 210px;
   margin-top: -25px;
+}
+
+.version-1 {
+  margin-left: 17px;
+  margin-top: 5px;
+}
+
+.version-2 {
+  margin-left: 130px;
+  margin-top: 5px;
+}
+
+.version-3 {
+  margin-left: 17px;
+  margin-top: 10px;
+}
+
+.version-4 {
+  margin-left: 130px;
+  margin-top: -22px;
+}
+.version-6 {
+  margin-left: 27px;
+  margin-top: 3px;
 }

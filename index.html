@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <script>
-        function yourFunction() {
-            alert("Hi there! welcome to the Portfolio of Mr zack 😄 We are glad you are here. Have Fun 😂");
+       function yourFunction() {
+            var txt;
+            var person = prompt("Welcome to the Portfolio of Mr zack 😂\n      We are glad you are here\n Please enter your name to continue", "");
+            if (person == null || person == "") {
+                txt = "User cancelled the prompt.";
+            } else {
+                txt = alert("Hello " + person + "! Hope you are okay today \n Have fun😄");
+            }
+            document.getElementById("demo").innerHTML = txt;
         }
     </script>
     <style>
@@ -28,14 +34,13 @@
     </style>
 </head>
 
-<body onload="Function()">
-
+<body onload="yourFunction()">
+<p id="demo"></p>
     <!-- Navbar -->
     <div class="w3-top">
         <div class="w3-bar w3-teal w3-card">
-            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
-                    class="fa fa-bars"></i></a>
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+                onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
             <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
             <a href="#my-projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Projects</a>
@@ -69,8 +74,11 @@
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
     
         <!-- Automatic Slideshow Images -->
+        <div class="yellow">
         <div class="mySlides w3-display-container w3-center">
-            <img src="pic1.jpg" style="width:100%">
+           
+                <img src="pic1.jpg" style="width:100%">
+                
             <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
                 <h3><b>Mr Zack</b></h3>
                 <h2><b>I'm a Coder</b></h2>
@@ -104,7 +112,7 @@
                 <h2><b>I'm a Writter</b></h2>
             </div>
         </div>
-    
+    </div>
         <!-- The Band Section -->
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
             <h2 class="w3-wide w3-text-grey ">ABOUT ME</h2>
@@ -219,10 +227,9 @@
                 </div>
                 <!-- Left Column -->
                 <div class="w3-third">
-    
                     <div class="w3-white w3-text-grey w3-card-4 margin">
-                        <div class="w3-auto w3-padding-large w3-padding-16">
-                            <img src="me2.jpg" style="width: 109%" alt="Avatar" class="improve">
+                    <div class="w3-auto w3-padding-large w3-padding-16">
+                    <img src="me2.jpg" style="width: 109%" alt="Avatar" class="improve">
                             <div class="w3-display-bottomleft w3-container w3-text-black">
                                 <b></b>
                             </div>
@@ -241,35 +248,50 @@
                             </p>
                             <hr>
     
-                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Technical
+                            <p class="w3-large"><b><i
+                             class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Technical
                                     Skills</b></p>
                             <p>Programing</p>
-                            
+    
                             <div class="w3-container">
-                                <div class="zero"><img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" style="width:15%"></div>
-                            
-                                <div class="one"><img src="https://catalin.red/dist/uploads/2011/01/css3-html5-logo.png" style="width:20%"></div>
-                                <div class="two"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" style="width: 12%"></div>
-                                <div class="three"><img src="https://seeklogo.net/wp-content/uploads/2014/10/jquery-logo-vector-download.jpg" style="width:20%"></div>
+                                <div class="zero"><img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
+                                        style="width:15%"></div>
+    
+                                <div class="one"><img src="https://catalin.red/dist/uploads/2011/01/css3-html5-logo.png"
+                                        style="width:25%"></div>
+                                <div class="two"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg"
+                                        style="width: 20%"></div>
+                                <div class="three"><img
+                                        src="https://seeklogo.net/wp-content/uploads/2014/10/jquery-logo-vector-download.jpg"
+                                        style="width:50%"></div>
                             </div>
-                            <br>
+                            <hr>
                             <p>Version control system</p>
-                            <div class="version">
-                                <img src="https://cdn.worldvectorlogo.com/logos/git.svg" style="width:20%">
-                                <img src="http://pngimg.com/uploads/github/github_PNG20.png" style="width: 15%">
+                            <div class="version-1">
+                                <div class="zero"></div><img src="https://cdn.worldvectorlogo.com/logos/git.svg" style="width:25%">
                             </div>
+                            <div class="version-2">
+                                <div class="one"></div><img src="http://pngimg.com/uploads/github/github_PNG20.png" style="width: 20%">
+                            </div>
+                            <hr>
                             <p>Designing</p>
-                            <div class="version">
-                                <img src="https://static.canva.com/static/images/canva_logo_100x100@2x.png" style="width: 15%">
-                                <img src="https://seeklogo.com/images/A/adobe-photoshop-cc-circle-logo-3BE8AF841D-seeklogo.com.png"
-                                    style="width: 15%">
-                            </div>
-                            <p>Operating system</p>
-                            <div class="version">
-                                <img src="https://static.makeuseof.com/wp-content/uploads/2008/08/windowslogo.png" style="width: 15%">
-                            </div
                             <br>
-                          
+                            <div class="version-3">
+                                <img src="https://static.canva.com/static/images/canva_logo_100x100@2x.png"
+                                    style="width: 15%">
+                            </div> 
+                            <div class="version-4">
+                                <img src="https://seeklogo.com/images/A/adobe-photoshop-cc-circle-logo-3BE8AF841D-seeklogo.com.png"
+                                    style="width: 22%">
+                            </div>
+                            <hr>
+                            <p>Operating system</p>
+                            <br>
+                           <div class="version-6">
+                                <img src="https://static.makeuseof.com/wp-content/uploads/2008/08/windowslogo.png"
+                                    style="width:15% ">
+                           </div>
+                            <hr>
                             <p class="w3-large w3-text-theme"><b>
                                     <i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b>
                             </p>
@@ -304,8 +326,7 @@
                             <p><i class="fa fa-headphones fa-fw w3-margin-right w3-text-teal"></i>Music & <i
                                     class="fa fa-film fa-fw w3-margin-right w3-text-teal"></i>Watching movie</p>
                             <br>
-                            <p><i class="fa fa-gamepad fa-fw w3-margin-right w3-text-teal"></i>Playing Video
-                                Games
+                            <p><i class="fa fa-gamepad fa-fw w3-margin-right w3-text-teal"></i>Playing Video Games
                             </p>
     
     
