@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="shortcut icon" href="me2.jpg"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,16 +10,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
-       function yourFunction() {
-            var txt;
-            var person = prompt("Welcome to the Portfolio of Mr zack 😂\n      We are glad you are here\n Please enter your name to continue", "");
-            if (person == null || person == "") {
-                txt = "User cancelled the prompt.";
-            } else {
-                txt = alert("Hello " + person + "! Hope you are okay today \n Have fun😄");
+                
+         function yourFunction() {
+                var txt;
+                var person = prompt("Welcome to the Portfolio of Mr zack 😂\n      We are glad you are here\n Please enter your name to continue", "");
+                if (person == null || person == "") {
+                    txt = "User cancelled the prompt.";
+                } else {
+                    txt = alert("Hello " + person + "! Hope you are okay today \n Have fun😄");
+                }
+                document.getElementById("demo").innerHTML = txt;
             }
-            document.getElementById("demo").innerHTML = txt;
-        }
     </script>
     <style>
         html,
@@ -354,15 +356,14 @@
                             <hr>
                         </div>
                         <div class="w3-container">
-                            <h5 class="w3-opacity"><b> Insight associate & survey user / Kuja Kuja </b></h5>
+                            <h5 class="w3-opacity"><b> Insight associate & Survey user / Kuja Kuja </b></h5>
                             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 4 Dec
                                 2017
                                 - 1
                                 March 2019
                             </h6>
-                            <p>Collecting Data feedback and help Humanitarian organizations improve their
-                                customer
-                                satisfaction within the refugee camp around the world </p>
+                            <p>Collecting Data feedback and help Humanitarian Organizations take action on real time customer feedback 
+                                satisfaction within the Refugee Camps around the World </p>
                             <hr>
                         </div>
                         <div class="w3-container">
@@ -469,13 +470,13 @@
                 <br>
                 <a href="https://www.facebook.com/niyokwizera.zachee"><i
                         class="fa fa-facebook-official w3-hover-opacity"></i></a>
-                <a href="https://www.instagram.com/zackniyo/"></a><i class="fa fa-instagram w3-hover-opacity"></i>
-                <a href="https://github.com/zackniyokwizera"></a><i class="fa fa-github w3-hover-opacity"></i>
-                <a href="https://za.pinterest.com/zackniyo/"></a><i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                <a href="https://codepen.io/MR-ZACK"></a><i class="fa fa-codepen w3-hover-opacity"></i>
+                <a href="https://www.instagram.com/zackniyo/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                <a href="https://github.com/zackniyokwizera"><i class="fa fa-github w3-hover-opacity"></i></a>
+                <a href="https://za.pinterest.com/zackniyo/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+                <a href="https://codepen.io/MR-ZACK"><i class="fa fa-codepen w3-hover-opacity"></i></a>
                 <a href="https://twitter.com/ZNiyokwizera"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-                <a href="#"></a><i class="fa fa-medium w3-hover-opacity"></i>
-                <a href="#"></a><i class="fa fa-linkedin w3-hover-opacity"></i>
+                <a href="https://medium.com/@zack_61994"><i class="fa fa-medium w3-hover-opacity"></i></a>
+                <a href="https://www.linkedin.com/in/zachee-niyokwizera-937a791a2/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
                 <p> Copywrite &#9400; 2020 Zachee Niyokwizera.</p>
             </footer>
             <script>
@@ -492,7 +493,7 @@
                     myIndex++;
                     if (myIndex > x.length) { myIndex = 1 }
                     x[myIndex - 1].style.display = "block";
-                    setTimeout(carousel, 4000);
+                    setTimeout(carousel, 500);
                 }
 
                 // Used to toggle the menu on small screens when clicking on the menu button
