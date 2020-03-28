@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="shortcut icon" href="me2.jpg"/>
+    <link rel="shortcut icon" href="me2.jpg" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,17 +10,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
-                
-         function yourFunction() {
-                var txt;
-                var person = prompt("Welcome to the Portfolio of Mr zack 😂\n      We are glad you are here\n Please enter your name to continue", "");
-                if (person == null || person == "") {
-                    txt = "User cancelled the prompt.";
-                } else {
-                    txt = alert("Hello " + person + "! Hope you are okay today \n Have fun😄");
-                }
-                document.getElementById("demo").innerHTML = txt;
+        function yourFunction() {
+            var txt;
+            var person = prompt(
+                "Welcome to the Portfolio of Mr zack 😂\n      We are glad you are here\n Please enter your name to continue",
+                "");
+            if (person == null || person == "") {
+                txt = "User cancelled the prompt.";
+            } else {
+                txt = alert("Hello " + person + "! Hope you are okay today \n Have fun😄");
             }
+            document.getElementById("demo").innerHTML = txt;
+        }
     </script>
     <style>
         html,
@@ -37,33 +38,34 @@
 </head>
 
 <body onload="yourFunction()">
-<p id="demo"></p>
+    <p id="demo"></p>
     <!-- Navbar -->
     <div class="w3-top">
         <div class="w3-bar w3-teal w3-card">
-            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
-                onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
             <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
             <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
-            <a href="#my-projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Projects</a>
-            <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Resume</a>
-            <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
-            
-            
-      
+            <a href="#proj" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Projects</a>
+            <a href="#res" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Resume</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+
+
+
             <div class="w3-dropdown-hover w3-hide-small">
                 <a class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></a>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="#" class="w3-bar-item w3-button">Random Facts</a>  
+                    <a href="#" class="w3-bar-item w3-button">Random Facts</a>
                     <a href="#" class="w3-bar-item w3-button">Availability</a>
-                    <a href="#" class="w3-bar-item w3-button">Social Media</a>
+                    <a href="#social" class="w3-bar-item w3-button">Social Media</a>
                 </div>
             </div>
             <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
                     class="fa fa-search"></i></a>
         </div>
     </div>
-    
+
     <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
     <div id="navDemo" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
         <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About </a>
@@ -71,483 +73,143 @@
         <a href="#resume" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Resume</a>
         <a href="#resume" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
     </div>
-    
+
     <!-- Page content -->
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
-    
+
         <!-- Automatic Slideshow Images -->
         <div class="yellow">
-        <div class="mySlides w3-display-container w3-center">
-           
-                <img src="pic1.jpg" style="width:100%">
-                
-            <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
-                <h3><b>Mr Zack</b></h3>
-                <h2><b>I'm a Coder</b></h2>
+            <div class="mySlides w3-display-container w3-center">
+
+                <img src="images/pic1.jpg" style="width:100%">
+
+                <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
+                    <h3><b>Mr Zack</b></h3>
+                    <h2><b>I'm a Coder</b></h2>
+                </div>
+            </div>
+            <div class="mySlides w3-display-container w3-center">
+                <img src="images/pic1.jpg" style="width:100%">
+                <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
+                    <h3><b>Mr Zack</b></h3>
+                    <h2><b>I'm a programmer</b></h2>
+                </div>
+            </div>
+            <div class="mySlides w3-display-container w3-center">
+                <img src="images/pic1.jpg" style="width:100%">
+                <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
+                    <h3><b>Mr Zack</b></h3>
+                    <h2><b>I'm a Designer</b></h2>
+                </div>
+            </div>
+            <div class="mySlides w3-display-container w3-center">
+                <img src="images/pic1.jpg" style="width:100%">
+                <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
+                    <h3><b>Mr Zack</b></h3>
+                    <h2><b>I'm a Hacker</b></h2>
+                </div>
+            </div>
+            <div class="mySlides w3-display-container w3-center">
+                <img src="images/pic1.jpg" style="width:100%">
+                <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
+                    <h3><b>Mr Zack</b></h3>
+                    <h2><b>I'm a Writter</b></h2>
+                </div>
             </div>
         </div>
-        <div class="mySlides w3-display-container w3-center">
-            <img src="pic1.jpg" style="width:100%">
-            <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
-                <h3><b>Mr Zack</b></h3>
-                <h2><b>I'm a programmer</b></h2>
-            </div>
-        </div>
-       <div class="mySlides w3-display-container w3-center">
-            <img src="pic1.jpg" style="width:100%">
-            <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
-                <h3><b>Mr Zack</b></h3>
-                <h2><b>I'm a Designer</b></h2>
-            </div>
-        </div>
-        <div class="mySlides w3-display-container w3-center">
-            <img src="pic1.jpg" style="width:100%">
-            <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
-                <h3><b>Mr Zack</b></h3>
-                <h2><b>I'm a Hacker</b></h2>
-            </div>
-        </div>
-        <div class="mySlides w3-display-container w3-center">
-            <img src="pic1.jpg" style="width:100%">
-            <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
-                <h3><b>Mr Zack</b></h3>
-                <h2><b>I'm a Writter</b></h2>
-            </div>
-        </div>
-    </div>
         <!-- The Band Section -->
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
             <h2 class="w3-wide w3-text-grey ">ABOUT ME</h2>
             <h5 class="w3-text-grey"><i>Who am i ? </i></h5>
-            <h4 class="w3-justify w3-text-dark-gray ">I'm Zachee Niyokwizera, a programmer in learning and a soon to be  Junior Front-end Developper. Call me Zack to save
-            your time and breath. I'm originally from Burundi and currently a product of Afrolabs Software company limited based in
-            Cape Town. I'm a lifelong learner with an ongoing curiosity to learn new tech-related skills. I can't wait till I get to
-            the point where I can jump into the Tech World and put what I'm learning to good use and solve real world challenges.
-            But for now I'm having fun learning the basics!</h4>
-        </div>
-  
-<h1>PROJECTS</h1>
-<div class="pricing-table">
-
-    <div class="col">
-        <div class="table">
-            <img src="quotes.png"
-                alt="Avatar" style="width:100%">
-            <h2>Random Quote machine</h2>
-
-            <a href="https://thirsty-payne-a0af9c.netlify.com/"><button>Live demo</button></a>
-            <a href="https://github.com/zackniyokwizera/Random-quote-machine"><button>Github view</button></a>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="table">
-            <img src="calc.png"
-                alt="Avatar" style="width:100%">
-            <h2>Javascript Calculator</h2>
-            <a href="https://cdpn.io/MR-ZACK/debug/ExYBPvO/xnMabZJWWGEr"><button>Live demo</button></a>
-            <a href="https://github.com/zackniyokwizera/fcc-javascript-calculator"><button>Github view</button></a>
-        </div>
-    </div>
-
-
-    <div class="col">
-        <div class="table">
-            <img src="pigame.PNG"
-                alt="Avatar" style="width:100%">
-            <h2>The Pig Dice game</h2>
-            <div class="pop">Brand New &#128523 </div>
-            <a href="https://friendly-pare-34e38e.netlify.com/"><button>Live demo</button></a>
-            <a href="https://github.com/zackniyokwizera/4-DOM-pig-game"><button>Github view</button></a>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="table">
-            <img src="weather.png" alt="Avatar" style="width:100%">
-            <h2>Live Weather app</h2>
-            <a href="https://naughty-goldwasser-b59b5b.netlify.com/"><button>Live
-                    demo</button></a>
-            <a href="https://github.com/zackniyokwizera/my-weather-app"><button>Github view</button></a>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="table">
-            <img src="coming.PNG" alt="Avatar" style="width:100%">
-    
-            <h2>Currency converter</h2>
-    
-            <a href="#"><button>Live demo</button></a>
-            <a href="#"><button>Github view</button></a>
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="table">
-            <img src="tester.PNG" alt="Avatar" style="width:100%"> 
-    
-            <h2>ajax Tester </h2>
-    
-            <a href="https://adoring-mclean-b2da5e.netlify.com"><button>Live demo</button></a>
-            <a href="https://github.com/zackniyokwizera/AJAX-TESTER"><button>Github view</button></a>
-        </div>
-    </div>
-    <div class="col">
-        <div class="table">
-            <img src="joke.PNG" alt="Avatar" style="width:100%">
-    
-            <h2>Random C. Norris Jokes</h2>
-    
-            <a href="https://zealous-swartz-947dcd.netlify.com"><button>Live demo</button></a>
-            <a href="https://github.com/zackniyokwizera/Random-Chick-Norris-Jokes"><button>Github view</button></a>
-        </div>
-    </div>
-    <div class="col">
-        <div class="table">
-            <img src="wiki.PNG" alt="Avatar" style="width:100%">
-    
-            <h2>Wikipedia & Youtube Api</h2>
-    
-            <a href="https://practical-knuth-0fe6e9.netlify.com/"><button>Live demo</button></a>
-            <a href="https://github.com/zackniyokwizera/AJAX-Info-App-with-Wikipedia-and-Youtube-APIs"><button>Github view</button></a>
-        </div>
-    </div>
-    <h1>UPCOMING PROJECTS</h1>
-    <div class="pricing-table">
-    
-        <div class="col">
-            <div class="table">
-                <img src="coming.PNG" alt="Avatar" style="width:100%">
-                <h2>Online Laptop store</h2>
-    
-                <a href="#"><button>Live demo</button></a>
-                <a href="#"><button>Github view</button></a>
-            </div>
-        </div>
-        
-        <div class="col">
-            <div class="table">
-                <img src="coming.PNG" alt="Avatar" style="width:100%">
-    
-                <h2>Currency converter</h2>
-    
-                <a href="#"><button>Live demo</button></a>
-                <a href="#"><button>Github view</button></a>
-            </div>
-        </div>
-        <div class="col">
-            <div class="table">
-                <img src="coming.PNG" alt="Avatar" style="width:100%">
-        
-                <h2>To do list Application</h2>
-        
-                <a href="#"><button>Live demo</button></a>
-                <a href="#"><button>Github view</button></a>
-            </div>
-        </div>
-    
-        <div class="col">
-            <div class="table">
-                <img src="coming.PNG" alt="Avatar" style="width:100%">
-                <h2>Have no idea &#128514 still thinking </h2>
-                <a href="#"><button>Live
-                        demo</button></a>
-                <a href="#"><button>Github view</button></a>
-            </div>
+            <h4 class="w3-justify w3-text-dark-gray ">I'm Zachee Niyokwizera, a programmer in learning and a soon to be 
+                Junior Front-end Developper. Call me Zack to save
+                your time and breath. I'm originally from Burundi and currently a product of Afrolabs Software company
+                limited based in
+                Cape Town. I'm a lifelong learner with an ongoing curiosity to learn new tech-related skills. I can't
+                wait till I get to
+                the point where I can jump into the Tech World and put what I'm learning to good use and solve real
+                world challenges.
+                But for now I'm having fun learning the basics!</h4>
         </div>
 
+        <a href="projects.html">
+            <p class="button button1" id="proj">View my Projects</p>
+        </a>
+        <a href="resume.html">
+            <p class="button button1" id="res">View my Resume</p>
+        </a>
 
-    <div class="w3-light-grey">
-    
-        <!-- Page Container -->
-        <div class="w3-content w3-margin-top" style="max-width:1400px;">
-    
-            <!-- The Grid -->
-            <div class="w3-row-padding w3-left-align">
-                <div id="resume">
-                    <h1>RESUME</h1>
+        <!-- (Contact Section) -->
+        <div class="w3-content  w3-container w3-padding-64" id="contact">
+            <h3 class="w3-center">WHERE I WORK</h3>
+            <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+            <div class="w3-row w3-padding-32 w3-section">
+                <div class="w3-col m4 w3-container">
+                    <img src="images/map.jpg" class="w3-image w3-round" style="width:100%">
                 </div>
-                <!-- Left Column -->
-                <div class="w3-third">
-                    <div class="w3-white w3-text-grey w3-card-4 margin">
-                    <div class="w3-auto w3-padding-large w3-padding-16">
-                    <img src="me2.jpg" style="width: 109%" alt="Avatar" class="improve">
-                            <div class="w3-display-bottomleft w3-container w3-text-black">
-                                <b></b>
-                            </div>
-                        </div>
-                        <div class="w3-container">
-                            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Front-end
-                                Developper
-                            </p>
-                            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Cape town,
-                                South
-                                Africa
-                            </p>
-                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>zack@labs.ws
-                            </p>
-                            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+270631362182
-                            </p>
-                            <hr>
-    
-                            <p class="w3-large"><b><i
-                             class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Technical
-                                    Skills</b></p>
-                            <p>Programing</p>
-    
-                            <div class="w3-container">
-                                <div class="zero"><img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg"
-                                        style="width:15%"></div>
-    
-                                <div class="one"><img src="https://catalin.red/dist/uploads/2011/01/css3-html5-logo.png"
-                                        style="width:25%"></div>
-                                <div class="two"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg"
-                                        style="width: 20%"></div>
-                                <div class="three"><img
-                                        src="https://seeklogo.net/wp-content/uploads/2014/10/jquery-logo-vector-download.jpg"
-                                        style="width:50%"></div>
-                            </div>
-                            <hr>
-                            <p>Version control system</p>
-                            <div class="version-1">
-                                <div class="zero"></div><img src="https://cdn.worldvectorlogo.com/logos/git.svg" style="width:25%">
-                            </div>
-                            <div class="version-2">
-                                <div class="one"></div><img src="http://pngimg.com/uploads/github/github_PNG20.png" style="width: 20%">
-                            </div>
-                            <hr>
-                            <p>Designing</p>
-                            <br>
-                            <div class="version-3">
-                                <img src="https://static.canva.com/static/images/canva_logo_100x100@2x.png"
-                                    style="width: 15%">
-                            </div> 
-                            <div class="version-4">
-                                <img src="https://seeklogo.com/images/A/adobe-photoshop-cc-circle-logo-3BE8AF841D-seeklogo.com.png"
-                                    style="width: 22%">
-                            </div>
-                            <hr>
-                            <p>Operating system</p>
-                            <br>
-                           <div class="version-6">
-                                <img src="https://static.makeuseof.com/wp-content/uploads/2008/08/windowslogo.png"
-                                    style="width:15% ">
-                           </div>
-                            <hr>
-                            <p class="w3-large w3-text-theme"><b>
-                                    <i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b>
-                            </p>
-                            <p>French</p>
-                            <div class="w3-light-teal w3-round-xlarge">
-                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:60%"></div>
-                            </div>
-                            <p>English</p>
-                            <div class="w3-light-teal w3-round-xlarge">
-                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
-                            </div>
-                            <p>Swahili</p>
-                            <div class="w3-light-teal w3-round-xlarge">
-                                <div class="w3-round-xlarge w3-teal" style="height:24px;width:96%"></div>
-                            </div>
-                            <p>Kirundi & Kinyarwanda</p>
-                            <div class="w3-light-teal w3-round-xlarge">
-                                <div class="w3-round-xlarge w3-teal" style="height:24px;width: 97%"></div>
-                            </div>
-                            <br>
-                        </div>
-                    </div><br>
-                    <div class="my-card- w3-white">
-    
-                        <div class="my-container w3-shadow-gray">
-                            <h2 class="w3-text-grey w3-padding-16"><i
-                                    class="fa fa-bars fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Hobbies
-                            </h2>
-    
-                            <p><i class="fa fa-home fa-fw w3-margin-right w3-text-teal"></i>Going to the Gym</p>
-                            <br>
-                            <p><i class="fa fa-headphones fa-fw w3-margin-right w3-text-teal"></i>Music & <i
-                                    class="fa fa-film fa-fw w3-margin-right w3-text-teal"></i>Watching movie</p>
-                            <br>
-                            <p><i class="fa fa-gamepad fa-fw w3-margin-right w3-text-teal"></i>Playing Video Games
-                            </p>
-    
-    
-                        </div> <br>
+                <div class="w3-col m8 w3-panel">
+                    <div class="w3-large w3-margin-bottom">
+                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Cape Town,
+                        South Africa<br>
+                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +27
+                        0631362182<br>
+                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                        zack@labs.ws<br>
                     </div>
-                    <!-- End Left Column -->
-                </div>
-    
-                <!-- Right Column -->
+                    <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
 
-                <div class="w3-twothird">
-    
-                    <div class="w3-container w3-card w3-white w3-margin-bottom">
-                        <h2 class="w3-text-grey w3-padding-16"><i
-                                class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work
-                            Experience
-                        </h2>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b> Internship / Afrolabs</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 1 May
-                                2019
-                                -
-                                <span class="w3-tag w3-teal w3-round"> Current</span></h6>
-                            <p>Becoming a Junior Front-end Developper soon</p>
-    
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b> Insight associate & Survey user / Kuja Kuja </b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 4 Dec
-                                2017
-                                - 1
-                                March 2019
-                            </h6>
-                            <p>Collecting Data feedback and help Humanitarian Organizations take action on real time customer feedback 
-                                satisfaction within the Refugee Camps around the World </p>
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>English Teacher & Librarian (Volunteer) / Save The
-                                    Children
-                                    Rwanda</b>
-                            </h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> 5 Jan
-                                2016
-                                -
-                                1st Dec 2017
-                            </h6>
-                            <p>Training young people in English clubs and assisting them with Library services
-                                in
-                                Mahama
-                                Camp (Rwanda)</p><br>
-                        </div>
-                    </div>
-    
-                    <div class="w3-container w3-card w3-white">
-                        <h2 class="w3-text-grey w3-padding-16"><i
-                                class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
-                        </h2>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Coding courses: Freecodecamp, W3school & Udemy</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> May
-                                2019 -
-                                Jan
-                                2020
-                            </h6>
-                            <p>HTML, CSS & Javascript | Certificates </p>
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Group scolaire paysannat L (High school)</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 -
-                                2017
-                            </h6>
-                            <p>Graduate from the department of Litterature in French, English and Kinyarwanda
-                            </p>
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Lycee du lac Tanganyika</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 -
-                                2015
-                            </h6>
-                            <p> Basics of Arts and Languages | Certificate</p>
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Lycee Municipal Buterere</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 -
-                                2013
-                            </h6>
-                            <p>Basics Sciences | Certificate</p>
-                            <p>Basics Sciences | Certificate</p>
-    
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Lycee Communal Buringa</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2006 -
-                                2012
-                            </h6>
-                            <p>Basics Sciences | School report</p>
-                            <br>
-                        </div>
-                        <div class="w3-container">
-                            <h2 class="w3-text-grey w3-padding-16"><i
-                                    class=" fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Formal
-                                Trainings (Save the children)</h2>
-                            <h6 class="w3-text-teal "><i class="fa fa-calendar fa-fw w3-margin-right "></i>
-                                March
-                                2012
-                            </h6>
-                            <p> T.O.T Training | certificate</p>
-                            <h6 class="w3-text-teal "><i class="fa fa-calendar fa-fw w3-margin-right "></i>June
-                                2016
-                            </h6>
-                            <p>SGBV Training | certificate</p>
-                            <h6 class="w3-text-teal "><i class="fa fa-calendar fa-fw w3-margin-right "></i> Oct
-                                2016
-                            </h6>
-                            <p>Reading club Mentors Training | certificate</p>
-                            <h6 class="w3-text-teal "><i class="fa fa-calendar fa-fw w3-margin-right "></i> Jan
-                                2017
-                            </h6>
-                            <p>Hummanitarian Principals Training | certificate</p> <br>
-                        </div>
-    
-                        <!-- End Right Column -->
-                    </div>
-                    <!-- End Grid -->
                 </div>
-                <!-- End Page Container -->
             </div>
-            <!-- Image of location/map
-    
-           <!-- footer  -->
-              
-            <footer class="w3-container w3-teal  w3-center w3-margin-top w3-large">
-                <em>Find me on social media.</em>
-                <br>
-                <a href="https://www.facebook.com/niyokwizera.zachee"><i
-                        class="fa fa-facebook-official w3-hover-opacity"></i></a>
-                <a href="https://www.instagram.com/zackniyo/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-                <a href="https://github.com/zackniyokwizera"><i class="fa fa-github w3-hover-opacity"></i></a>
-                <a href="https://za.pinterest.com/zackniyo/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-                <a href="https://codepen.io/MR-ZACK"><i class="fa fa-codepen w3-hover-opacity"></i></a>
-                <a href="https://twitter.com/ZNiyokwizera"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-                <a href="https://medium.com/@zack_61994"><i class="fa fa-medium w3-hover-opacity"></i></a>
-                <a href="https://www.linkedin.com/in/zachee-niyokwizera-937a791a2/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-                <p> Copywrite &#9400; 2020 Zachee Niyokwizera.</p>
-            </footer>
-            <script>
-                // Automatic Slideshow - change image every 4 seconds
-                var myIndex = 0;
-                carousel();
+        </div>
 
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) { myIndex = 1 }
-                    x[myIndex - 1].style.display = "block";
-                    setTimeout(carousel, 500);
+        <!-- footer  -->
+        <footer class="w3-container w3-teal  w3-center w3-margin-top w3-large" id="social">
+
+            <em>Find me on social media.</em>
+            <br>
+            <a href="https://www.facebook.com/niyokwizera.zachee"><i
+                    class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/zackniyo/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://github.com/zackniyokwizera"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://za.pinterest.com/zackniyo/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="https://codepen.io/MR-ZACK"><i class="fa fa-codepen w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/ZNiyokwizera"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://medium.com/@zack_61994"><i class="fa fa-medium w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/zachee-niyokwizera-937a791a2/"><i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <p> Copywrite &#9400; 2020 Zachee Niyokwizera.</p>
+        </footer>
+
+        <script>
+            // Automatic Slideshow - change image every 4 seconds
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
                 }
-
-                // Used to toggle the menu on small screens when clicking on the menu button
-                function myFunction() {
-                    var x = document.getElementById("navDemo");
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";
-                    } else {
-                        x.className = x.className.replace(" w3-show", "");
-                    }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
                 }
-            </script>
-            </body>
-    
-            </html>
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 500);
+            }
+
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function myFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+</body>
+
+</html>
