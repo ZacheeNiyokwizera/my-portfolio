@@ -1,214 +1,104 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link rel="shortcut icon" href="me2.jpg" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-        function yourFunction() {
-            var txt;
-            var person = prompt(
-                "Welcome to the Portfolio of Mr zack 😂\n      We are glad you are here\n Please enter your name to continue",
-                "");
-            if (person == null || person == "") {
-                txt = "User cancelled the prompt.";
-            } else {
-                txt = alert("Hello " + person + "! Hope you are okay today \n Have fun😄");
-            }
-            document.getElementById("demo").innerHTML = txt;
-        }
-    </script>
-    <style>
-        html,
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Roboto", sans-serif
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/me2.jpg" />
+  <title>Mr Zack</title>
 </head>
+<body>
 
-<body onload="yourFunction()">
-    <p id="demo"></p>
-    <!-- Navbar -->
-    <div class="w3-top">
-        <div class="w3-bar w3-teal w3-card">
-            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
-                    class="fa fa-bars"></i></a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-            <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
-            <a href="projects.html" target="_blank"
-                class="w3-bar-item w3-button w3-padding-large w3-hide-small">Projects</a>
-            <a href="resume.html" target="_blank"
-                class="w3-bar-item w3-button w3-padding-large w3-hide-small">Resume</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
-
-
-
-            <div class="w3-dropdown-hover w3-hide-small">
-                <a class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></a>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="#" class="w3-bar-item w3-button">Random Facts</a>
-                    <a href="#" class="w3-bar-item w3-button">Availability</a>
-                    <a href="#social" class="w3-bar-item w3-button">Social Media</a>
-                </div>
-            </div>
-            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
-                    class="fa fa-search"></i></a>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero"><h1><span>Z</span>achée <span>N</span>iyokwizera</h1></a>
         </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#footer" data-after="Service">Services</a></li>
+            <li><a href="#footer" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#footer" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
+  <!-- End Header -->
 
-    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-    <div id="navDemo" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-        <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About </a>
-        <a href="projects.html" target="_blank" class="w3-bar-item w3-button w3-padding-large"
-            onclick="myFunction()">Projects</a>
-        <a href="resume.html" target="_blank" class="w3-bar-item w3-button w3-padding-large"
-            onclick="myFunction()">Resume</a>
-        <a href="#resume" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Mr Zack <span></span></h1>
+        <a href="#footer" type="button" class="cta">Portfolio</a>
+      </div>
     </div>
+  </section>
+  <!-- End Hero Section  -->
 
-    <!-- Page content -->
-    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+  
+  
 
-        <!-- Automatic Slideshow Images -->
-        <div class="yellow">
-            <div class="mySlides w3-display-container w3-center">
-
-                <img src="images/pic1.jpg" style="width:100%">
-
-                <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
-                    <h3><b>Mr Zack</b></h3>
-                    <h2><b>I'm a Coder</b></h2>
-                </div>
-            </div>
-            <div class="mySlides w3-display-container w3-center">
-                <img src="images/pic1.jpg" style="width:100%">
-                <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
-                    <h3><b>Mr Zack</b></h3>
-                    <h2><b>I'm a programmer</b></h2>
-                </div>
-            </div>
-            <div class="mySlides w3-display-container w3-center">
-                <img src="images/pic1.jpg" style="width:100%">
-                <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
-                    <h3><b>Mr Zack</b></h3>
-                    <h2><b>I'm a Designer</b></h2>
-                </div>
-            </div>
-            <div class="mySlides w3-display-container w3-center">
-                <img src="images/pic1.jpg" style="width:100%">
-                <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
-                    <h3><b>Mr Zack</b></h3>
-                    <h2><b>I'm a Hacker</b></h2>
-                </div>
-            </div>
-            <div class="mySlides w3-display-container w3-center">
-                <img src="images/pic1.jpg" style="width:100%">
-                <div class="w3-display-bottommiddle w3-container w3-text-teal w3-padding-32 w3-hide-small">
-                    <h3><b>Mr Zack</b></h3>
-                    <h2><b>I'm a Writer</b></h2>
-                </div>
-            </div>
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="images/me2.jpg" alt="img">
         </div>
-        <!-- The Band Section -->
-        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-            <h2 class="w3-wide w3-text-grey ">ABOUT ME</h2>
-            <h5 class="w3-text-grey"><i>Who am I ? </i></h5>
-            <h4 class="w3-justify w3-text-dark-gray ">I'm Zachee Niyokwizera, a programmer in learning and a soon to be 
-                Junior Front-end Developer. Call me Zack to save
-                your time and breath. I'm originally from Burundi and currently an Employee of Afrolabs Software company
-                limited based in
-                Cape Town. I'm a lifelong learner with an ongoing curiosity to learn new tech-related skills. I can't
-                wait until I get to
-                the point where I can jump into the Tech World and put what I'm learning to good use and solve real
-                world challenges.
-                But for now I'm having fun learning the basics!</h4>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+       
+        <p>I'm Zachée Niyokwizera, an entry-level software developer. Call me Zack to save
+          your time and breath. I'm originally from Burundi and currently an Employee of Afrolabs Software company
+          limited based in
+          Cape Town. I'm a lifelong learner with an ongoing curiosity to learn new tech-related skills. I can't
+          wait until I get to
+          the point where I can jump into the Tech World and put what I'm learning to good use and solve real
+          world challenges.
+          But for now I'm having fun learning the basics!</p>
+        <a href="#footer" class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+    
+      <h2>Let's connect on social media.</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/niyokwizera.zachee" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
         </div>
-
-
-        <!-- (Contact Section) -->
-        <div class="w3-content  w3-container w3-padding-64" id="contact">
-            <h3 class="w3-center">WHERE I WORK</h3>
-            <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-            <div class="w3-row w3-padding-32 w3-section">
-                <div class="w3-col m4 w3-container">
-                    <img src="images/map.jpg" class="w3-image w3-round" style="width:100%">
-                </div>
-                <div class="w3-col m8 w3-panel">
-                    <div class="w3-large w3-margin-bottom">
-                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Cape Town,
-                        South Africa<br>
-                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +27
-                        0631362182<br>
-                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                        zack@labs.ws<br>
-                    </div>
-                    <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-
-                </div>
-            </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/zackniyo/" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
         </div>
-
-        <!-- footer  -->
-        <footer class="w3-container w3-teal  w3-center w3-margin-top w3-large" id="social">
-
-            <em>Find me on social media.</em>
-            <br>
-            <a href="https://www.facebook.com/niyokwizera.zachee"><i
-                    class="fa fa-facebook-official w3-xlarge w3-hover-opacity"></i></a>
-            <a href="https://www.instagram.com/zackniyo/"><i class="fa fa-instagram w3-xlarge w3-hover-opacity"></i></a>
-            <a href="https://github.com/zackniyokwizera"><i class="fa fa-github w3-xlarge w3-hover-opacity"></i></a>
-            <a href="https://za.pinterest.com/zackniyo/"><i
-                    class="fa fa-pinterest-p w3-xlarge w3-hover-opacity"></i></a>
-            <a href="https://codepen.io/MR-ZACK"><i class="fa fa-codepen w3-xlarge w3-hover-opacity"></i></a>
-            <a href="https://twitter.com/ZNiyokwizera"><i class="fa fa-twitter w3-xlarge w3-hover-opacity"></i></a>
-            <a href="https://medium.com/@zack_61994"><i class="fa fa-medium w3-xlarge w3-hover-opacity"></i></a>
-            <a href="https://www.linkedin.com/in/zachee-niyokwizera-937a791a2/"><i
-                    class="fa fa-linkedin w3-hover-opacity"></i></a>
-            <p> Copywrite &#9400; 2020 Zachee Niyokwizera.</p>
-        </footer>
-
-        <script>
-            // Automatic Slideshow - change image every 4 seconds
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) {
-                    myIndex = 1
-                }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 500);
-            }
-
-            // Used to toggle the menu on small screens when clicking on the menu button
-            function myFunction() {
-                var x = document.getElementById("navDemo");
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                }
-            }
-        </script>
+        <div class="social-item">
+          <a href="https://twitter.com/ZNiyokwizera" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+        </div>    
+      </div>
+      <p>Copywrite &#9400; 2020 Zachée Niyokwizera.</p>
+       <p>All rights reserved</p>
+    </div>
+  
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+  
 </body>
 
 </html>
