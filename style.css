@@ -7,7 +7,7 @@
 
 html {
     font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Allura', cursive;
     scroll-behavior: smooth;
 }
 
@@ -336,7 +336,7 @@ p {
 }
 
 #about .col-right p {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 #about .col-right .cta {
@@ -366,15 +366,6 @@ p {
 
 
 /* End About Section */
-
-
-/* div[class^="tag"] {
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
-    width: 120px;
-    height: 30px;
-    background-color: #1e81f3;
-    margin-right: 30px;
-} */
 
 
 /* Skills Section */
@@ -488,7 +479,7 @@ li.rc:after {
 /* Projects Section */
 
 .myProjects {
-    background-color: #ced8e4;
+    background-color: #fff;
     padding: 20px;
     font-family: Arial;
 }
@@ -499,16 +490,19 @@ li.rc:after {
 .main {
     max-width: 1000px;
     margin: auto;
+    margin-top: 60px;
 }
 
 .main hr {
     margin-top: 5px;
 }
 
-h3 {
+.main h3 {
+    font-family: 'Allura', cursive;
     font-weight: 500;
     font-size: 50px;
     word-break: break-all;
+    text-align: center;
 }
 
 .row {
@@ -920,7 +914,8 @@ h3 {
         align-items: center;
     }
     .content {
-        width: 200px;
+        width: 300px;
+        margin-left: -90px;
     }
     .main h3 {
         font-size: 25px;
