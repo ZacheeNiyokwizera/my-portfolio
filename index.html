@@ -15,7 +15,7 @@
             <div class="nav-bar">
                 <div class="brand">
                     <!-- <a href="#hero"> -->
-                    <h1><span>Z</span>achée <span>N</span>iyokwizera</h1>
+                    <h1><span>Z</span><span>N</span></h1>
                     <!-- </a> -->
                 </div>
                 <div class="nav-list">
@@ -34,6 +34,9 @@
         </div>
     </section>
     <!-- End Header -->
+
+
+
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero container">
@@ -65,7 +68,7 @@
     <!-- Skills section -->
     <section id="skills" class="my-skills-section">
         <div class="myContainer">
-            <h1>MY SKILLS</h1>
+            <h1> PROGRAMMING SKILLS</h1>
             <ul>
                 <li class="html">HTML</li>
                 <li class="css">CSS</li>
@@ -179,13 +182,15 @@
     <section class="contact" id="contact">
         <h1 class="contact-heading ">Contact Me</h1>
         <form class="contact-form center ">
-            <div class="input-group "><label>Full Name *</label><input type="text " class="contact-input" placeholder="Enter Your Name" /></div>
+            <div class="input-group"><label>Full Name *</label>
+                <input type="text" id="myName" class="contact-input" placeholder="Enter Your Name" /></div>
             <div class="input-groups ">
-                <div class="input-group "><label>Email *</label><input type="email" class="contact-input" placeholder="Enter Your Email" /></div>
-                <div class="input-group "><label>Phone</label><input type="text" class="contact-input " placeholder="Enter Phone Number" /></div>
+                <div class="input-group"><label>Email *</label><input type="email" id="myEmail" class="contact-input" placeholder="Enter Your Email" /></div>
+                <div class="input-group "><label>Phone</label><input type="text" id="myPhone" class="contact-input " placeholder="Enter Phone Number" /></div>
             </div>
-            <div class="input-group "><label>Message</label><textarea class="form-textarea " placeholder="Your Message Here... "></textarea>
-            </div><input type="submit" value="Submit" class="form-btn" />
+            <div class="input-group "><label>Message</label><textarea id="myMessage" class="form-textarea" placeholder="Your Message Here... "></textarea>
+            </div><input onclick="emptyForm()" type="submit" value="Submit" class="form-btn" />
+            <div class="alert">Your message has been sent</div>
         </form>
     </section>
     <!-- End of Contact -->
@@ -198,6 +203,7 @@
         </p>
     </footer>
     <!-- End of Footer -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase.js"></script>
     <script src="./app.js "></script>
 </body>
 

@@ -1,3 +1,67 @@
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyAgTyO3-BGwHHCNde-jyHKYirjd2At7hVM",
+    authDomain: "contactform-b86e3.firebaseapp.com",
+    databaseURL: "https://contactform-b86e3.firebaseio.com",
+    projectId: "contactform-b86e3",
+    storageBucket: "contactform-b86e3.appspot.com",
+    messagingSenderId: "211904190522",
+    appId: "1:211904190522:web:15a6ee8eda90e928d57d03",
+    measurementId: "G-16WBXMFJMR"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+// Reference message collection
+var messagesRef = firebase.database().ref('messages');
+
+// Listen for form submit
+document.getElementById('contact').addEventListener('submit', submitForm);
+console.log("clicked");
+// Submit form
+function submitForm(e) {
+    e.preventDefault();
+
+    // Get values
+    var name = getInputVal('myName');
+    var email = getInputVal('myEmail');
+    var phone = getInputVal('myPhone');
+    var message = getInputVal('myMessage');
+
+    // Save message
+    saveMessage(name, email, phone, message);
+
+    // Show alert
+    document.querySelector('.alert').style.display = 'block';
+
+    // Hide alert after 3 seconds
+    setTimeout(function() {
+        document.querySelector('.alert').style.display = 'none';
+    }, 3000);
+
+    // Clear form
+    function emptyForm() {
+        document.getElementById('contact').reset();
+    }
+}
+
+// Function to get get form values
+function getInputVal(id) {
+    return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveMessage(name, email, phone, message) {
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+        name: name,
+        email: email,
+        phone: phone,
+        message: message
+    });
+}
+
+
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
@@ -23,9 +87,6 @@ menu_item.forEach((item) => {
         mobile_menu.classList.toggle('active');
     });
 });
-
-
-
 
 filterSelection("all")
 
@@ -61,7 +122,6 @@ function w3RemoveClass(element, name) {
     }
     element.className = arr1.join(" ");
 }
-
 
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
