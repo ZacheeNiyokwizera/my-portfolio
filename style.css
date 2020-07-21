@@ -994,6 +994,9 @@ li.rc:after {
     .myContainer {
         width: 300px;
     }
+    .myContainer h1 {
+        font-size: 40px;
+    }
     .btn {
         height: 35px;
     }
@@ -1005,8 +1008,17 @@ li.rc:after {
     }
     .row .column:nth-child(3) {
         margin-top: 310px;
+        width: 50%;
     }
     .myProjects {
         height: 1300px;
+    }
+    .col-right p {
+        font-size: 1.4rem;
+    }
+    .flip-card-back {
+        width: 250%;
+        height: 25%;
+        margin-left: -90px;
     }
 }

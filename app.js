@@ -16,8 +16,9 @@ firebase.initializeApp(firebaseConfig);
 var messagesRef = firebase.database().ref('messages');
 
 // Listen for form submit
-document.getElementById('contact').addEventListener('submit', submitForm);
+document.getElementById('contactForm').addEventListener('submit', submitForm);
 console.log("clicked");
+
 // Submit form
 function submitForm(e) {
     e.preventDefault();
@@ -40,10 +41,15 @@ function submitForm(e) {
     }, 3000);
 
     // Clear form
-    function emptyForm() {
-        document.getElementById('contact').reset();
-    }
+    document.getElementById('contactForm').reset();
 }
+
+
+
+
+
+
+
 
 // Function to get get form values
 function getInputVal(id) {
