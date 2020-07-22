@@ -1013,12 +1013,24 @@ li.rc:after {
     .myProjects {
         height: 1300px;
     }
-    .col-right p {
-        font-size: 1.4rem;
+    #about .col-right p {
+        font-size: 1.5rem;
     }
     .flip-card-back {
         width: 250%;
         height: 25%;
         margin-left: -90px;
+    }
+    html {
+        font-size: 15px;
+        font-family: 'Allura', cursive;
+    }
+    .alert {
+        font-size: 25px;
+        margin-bottom: 5px;
+        background: #fcc330;
+        color: #000;
+        margin-top: 30px;
+        display: none;
     }
 }
