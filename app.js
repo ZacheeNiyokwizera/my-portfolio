@@ -7,16 +7,16 @@ var firebaseConfig = {
     storageBucket: "contactform-b86e3.appspot.com",
     messagingSenderId: "211904190522",
     appId: "1:211904190522:web:15a6ee8eda90e928d57d03",
-    measurementId: "G-16WBXMFJMR"
+    measurementId: "G-16WBXMFJMR",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 // Reference message collection
-var messagesRef = firebase.database().ref('messages');
+var messagesRef = firebase.database().ref("messages");
 
 // Listen for form submit
-document.getElementById('contactForm').addEventListener('submit', submitForm);
+document.getElementById("contactForm").addEventListener("submit", submitForm);
 console.log("clicked");
 
 // Submit form
@@ -24,32 +24,25 @@ function submitForm(e) {
     e.preventDefault();
 
     // Get values
-    var name = getInputVal('myName');
-    var email = getInputVal('myEmail');
-    var phone = getInputVal('myPhone');
-    var message = getInputVal('myMessage');
+    var name = getInputVal("myName");
+    var email = getInputVal("myEmail");
+    var phone = getInputVal("myPhone");
+    var message = getInputVal("myMessage");
 
     // Save message
     saveMessage(name, email, phone, message);
 
     // Show alert
-    document.querySelector('.alert').style.display = 'block';
+    document.querySelector(".alert").style.display = "block";
 
     // Hide alert after 3 seconds
     setTimeout(function() {
-        document.querySelector('.alert').style.display = 'none';
+        document.querySelector(".alert").style.display = "none";
     }, 3000);
 
     // Clear form
-    document.getElementById('contactForm').reset();
+    document.getElementById("contactForm").reset();
 }
-
-
-
-
-
-
-
 
 // Function to get get form values
 function getInputVal(id) {
@@ -63,38 +56,41 @@ function saveMessage(name, email, phone, message) {
         name: name,
         email: email,
         phone: phone,
-        message: message
+        message: message,
     });
 }
 
+const hamburger = document.querySelector(
+    ".header .nav-bar .nav-list .hamburger"
+);
+const mobile_menu = document.querySelector(".header .nav-bar .nav-list ul");
+const menu_item = document.querySelectorAll(
+    ".header .nav-bar .nav-list ul li a"
+);
+const header = document.querySelector(".header.container");
 
-const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
-const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
-const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
-const header = document.querySelector('.header.container');
-
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    mobile_menu.classList.toggle('active');
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    mobile_menu.classList.toggle("active");
 });
 
-document.addEventListener('scroll', () => {
+document.addEventListener("scroll", () => {
     var scroll_position = window.scrollY;
     if (scroll_position > 250) {
-        header.style.backgroundColor = '#29323c';
+        header.style.backgroundColor = "#29323c";
     } else {
-        header.style.backgroundColor = 'transparent';
+        header.style.backgroundColor = "transparent";
     }
 });
 
 menu_item.forEach((item) => {
-    item.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        mobile_menu.classList.toggle('active');
+    item.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mobile_menu.classList.toggle("active");
     });
 });
 
-filterSelection("all")
+filterSelection("all");
 
 function filterSelection(c) {
     var x, i;
@@ -105,6 +101,7 @@ function filterSelection(c) {
         if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
     }
 }
+// filter selection for Languages
 
 function w3AddClass(element, name) {
     var i, arr1, arr2;
@@ -116,6 +113,7 @@ function w3AddClass(element, name) {
         }
     }
 }
+// filter selection for Languages
 
 function w3RemoveClass(element, name) {
     var i, arr1, arr2;
