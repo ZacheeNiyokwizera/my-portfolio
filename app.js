@@ -101,6 +101,7 @@ function filterSelection(c) {
         if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
     }
 }
+
 // filter selection for Languages
 
 function w3AddClass(element, name) {

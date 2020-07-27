@@ -659,7 +659,7 @@ li.rc:after {
     text-align: center;
     background: url(images/contact-us-bg.png) center no-repeat;
     background-size: cover;
-    animation: contact-bg 35s infinite;
+    animation: contact-bg 20s infinite;
 }
 
 .contact-heading {
@@ -736,7 +736,6 @@ li.rc:after {
     letter-spacing: 0.1rem;
     margin-top: 1rem;
     background-color: teal;
-    color: var(--white-color);
     border-radius: 0.5rem;
     border: none;
     cursor: pointer;
