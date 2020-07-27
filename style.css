@@ -1007,7 +1007,6 @@ li.rc:after {
     }
     .row .column:nth-child(3) {
         margin-top: 310px;
-        width: 50%;
     }
     .myProjects {
         height: 1300px;
@@ -1018,11 +1017,10 @@ li.rc:after {
     .flip-card-back {
         width: 250%;
         height: 25%;
-        margin-left: -90px;
+        margin-left: -80px;
     }
     html {
         font-size: 12px;
-        font-family: 'Allura', cursive;
     }
     .alert {
         font-size: 25px;
