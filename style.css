@@ -458,7 +458,7 @@ li.ng:after {
 
 @keyframes ng {
     to {
-        width: 60%;
+        width: 70%;
     }
 }
 
@@ -468,7 +468,7 @@ li.rc:after {
 
 @keyframes rc {
     to {
-        width: 40%;
+        width: 70%;
     }
 }
 
