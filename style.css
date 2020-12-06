@@ -11,9 +11,14 @@ html {
     scroll-behavior: smooth;
 }
 
-.nav-list a {
+a {
     text-decoration: none;
 }
+
+
+/* .nav-list a {
+    text-decoration: none;
+} */
 
 .container {
     min-height: 100vh;
