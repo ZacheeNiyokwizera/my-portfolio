@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
     <link rel="shortcut icon" href="images/me2.jpg" />
     <title>Mr Zack</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V96J5JCSC7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-V96J5JCSC7');
+    </script>
 </head>
 
 <body>
@@ -25,6 +38,7 @@
                     <ul>
                         <li><a href="#hero" data-after="Home">Home</a></li>
                         <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="#projects" data-after="About">Projects</a></li>
                         <li><a href="#contactForm" data-after="Contact">Contact</a></li>
                         <li><a href="#footer" data-after="footer">Get in touch</a></li>
                     </ul>
@@ -62,11 +76,10 @@
     </section>
     <!-- End About Section -->
 
-
     <!-- Contact -->
     <section class="contact" id="contactForm">
         <h1 class="contact-heading ">Contact Me</h1>
-        <form class="contact-form center ">
+        <form class="contact-form center" onsubmit="return submitForm()">
             <div class="input-group"><label>Full Name *</label><input type="text" id="myName" class="contact-input" placeholder="Enter Your Name" /></div>
             <div class="input-groups ">
                 <div class="input-group"><label>Email *</label><input type="email" id="myEmail" class="contact-input" placeholder="Enter Your Email" /></div>
