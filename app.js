@@ -16,7 +16,7 @@ firebase.initializeApp(firebaseConfig);
 var messagesRef = firebase.database().ref("messages");
 
 // Listen for form submit
-// document.getElementById("contactForm").addEventListener("submit", submitForm);
+document.getElementById("contactForm").addEventListener("submit", submitForm);
 // console.log("clicked");
 
 // Submit form
@@ -41,9 +41,15 @@ function submitForm(e) {
     }, 3000);
 
     // Clear form
+    document.getElementById("myName").value = " ";
+    document.getElementById("myEmail").value = " ";
+    document.getElementById("myPhone").value = " ";
+    document.getElementById("myMessage").value = " ";
     // document.getElementById("contactForm").reset();
 
-    return false;
+
+
+    // return false;
 }
 
 // Function to get get form values
